@@ -1,185 +1,404 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roshan Choudhary Portfolio</title>
+
     <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
 
-    <header>
-        <nav>
-            <h2 class="logo">QA Portfolio</h2>
 
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <nav>
 
-        <div class="hero">
-            <h1>Hello, I'm <span>Roshan Choudhary</span></h1>
+        <div class="logo">QA Portfolio</div>
 
-            <h2>Manual & Automation QA Tester</h2>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="theme-toggle" id="themeToggle">
+            🌙
+        </div>
+
+    </nav>
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h4>WELCOME TO MY PORTFOLIO</h4>
+
+            <h1>
+                Hi, I'm
+                <span>Roshan Choudhary</span>
+            </h1>
+
+            <div class="typing"></div>
 
             <p>
-                Passionate about ensuring software quality
-                through effective testing, defect tracking,
-                test case design, and user-focused validation.
+               QA Test Lead | 5+ Years in Software Testing | Quality Champion | Team Player
             </p>
 
-            <a href="#contact" class="btn">
-                Hire Me
-            </a>
-        </div>
-    </header>
 
-    <section id="about">
+            <div class="hero-buttons">
+                <a href="#contact" class="btn">Hire Me</a>
+                <a href="https://drive.google.com/file/d/10kMFCH4UruaAYAVcqK44RYkj-2mdAMVF/view?usp=drive_link" target="_blank" class="btn">Download Resume</a>
+            </div>
+
+        </div>
+
+        <div class="hero-image">
+            <img src="../New Version/Images/Roshan profile Pic.jpeg" alt="Profile">
+        </div>
+
+    </section>
+
+    <section id="about" class="hidden">
+
         <h2 class="section-title">About Me</h2>
 
-        <div class="card">
+        <div class="glass">
+
+            <p style="text-align: justify; line-height: 1.8;">
+Results-driven QA Test Lead and Software Testing Professional with over 5 years of IT experience, specializing in Software Quality Assurance, Manual Testing, Functional Testing, System Integration Testing (SIT), Regression Testing, and Defect Management. Proven track record of ensuring high-quality software delivery across multiple projects within Agile and Waterfall environments.
+
+<br><br>
+
+Demonstrated leadership experience in managing and mentoring a team of 2-3 QA engineers for over 1.5 years, driving testing activities, task allocation, defect reviews, risk assessment, and timely project delivery. Adept at coordinating with Business Analysts, Developers, Product Owners, and stakeholders to ensure business requirements are effectively translated into quality solutions.
+
+<br><br>
+
+Strong expertise in preparing test strategies, test plans, test scenarios, test cases, requirement analysis, defect lifecycle management, test execution, root cause analysis, and release validation. Hands-on experience supporting System Integration Testing (SIT), User Acceptance Testing (UAT), and end-to-end testing efforts to ensure seamless integration of complex business processes.
+
+<br><br>
+
+Recognized for exceptional analytical skills, attention to detail, leadership capabilities, problem-solving mindset, and commitment to delivering defect-free applications that enhance customer satisfaction and business value. Passionate about continuous process improvement, team collaboration, and maintaining high standards of software quality throughout the Software Development Life Cycle (SDLC) and Software Testing Life Cycle (STLC).
+</p>
+        </div>
+
+    </section>
+
+
+    <section id="blogs" class="blog-section hidden">
+
+    <h2 class="section-title">QA Insights & Blogs</h2>
+
+    <div class="blog-grid">
+
+        <article class="blog-card">
+            <span class="blog-tag">Career</span>
+            <h3>My Journey from QA Engineer to QA Test Lead</h3>
+
             <p>
-                I am a Manual QA Tester with 4.5+ years of experience in
-                functional testing, regression testing,
-                smoke testing, UAT testing, and defect reporting.
-
-                I have worked closely with development and business
-                teams to ensure software meets quality standards
-                before release.
+                Discover how five years of software testing experience helped me grow
+                from executing test cases to leading QA initiatives and mentoring teams.
             </p>
-        </div>
-    </section>
 
-    <section id="skills">
-        <h2 class="section-title">Skills</h2>
+            <button class="read-more-btn" onclick="openBlog('blog1')">
+                Read More →
+            </button>
+        </article>
 
-        <div class="skills-grid">
+        <article class="blog-card">
+            <span class="blog-tag">Manual Testing</span>
 
-            <div class="skill-card">
-                Test Case Design
+            <h3>Why Manual Testing Still Matters in the Age of Automation</h3>
+
+            <p>
+                While automation accelerates testing, manual testing continues to play
+                a crucial role in exploratory, usability, and user-focused validation.
+            </p>
+
+            <button class="read-more-btn" onclick="openBlog('blog2')">
+                Read More →
+            </button>
+        </article>
+
+        <article class="blog-card">
+            <span class="blog-tag">Best Practices</span>
+
+            <h3>Top 10 Lessons Learned from 5+ Years in Software Testing</h3>
+
+            <p>
+                Key insights I've gained while testing enterprise applications,
+                collaborating with Agile teams, and driving software quality.
+            </p>
+
+            <button class="read-more-btn" onclick="openBlog('blog3')">
+                Read More →
+            </button>
+        </article>
+
+    </div>
+</section>
+
+
+    <section class="hidden">
+
+        <h2 class="section-title">Achievements</h2>
+
+        <div class="stats">
+
+            <div class="glass stat-card">
+                <h2 class="counter" data-target="5">0</h2>
+                <p>Years Experience</p>
             </div>
 
-            <div class="skill-card">
-                Functional Testing
+                      
+            <div class="glass stat-card">
+                <h2 class="counter" data-target="3">0</h2>
+                <p>QA Team Members Led</p>
             </div>
 
-            <div class="skill-card">
-                Regression Testing
-            </div>
-
-            <div class="skill-card">
-                Smoke Testing
-            </div>
-
-            <div class="skill-card">
-                API Validation
-            </div>
-
-            <div class="skill-card">
-                Bug Reporting
-            </div>
-
-        </div>
-    </section>
-
-    <section id="tools">
-        <h2 class="section-title">Tools & Technologies</h2>
-
-        <div class="skills-grid">
-
-            <div class="skill-card">JIRA</div>
-
-            <div class="skill-card">PlayWright Automation</div>
-
-            <div class="skill-card">Postman</div>
-
-            <div class="skill-card">SQL</div>
-
-            <div class="skill-card">Azure DevOps</div>
-
-            <div class="skill-card">Browser DevTools</div>
-
-        </div>
-    </section>
-
-    <section id="projects">
-        <h2 class="section-title">Projects</h2>
-
-        <div class="project-grid">
-
-            <div class="project-card">
-                <h3>E-Commerce Testing</h3>
-
-                <p>
-                    Performed functional, regression, and
-                    checkout testing for a retail website.
-                </p>
-            </div>
-
-            <div class="project-card">
-                <h3>Banking Application</h3>
-
-                <p>
-                    Validated account creation, transactions,
-                    and user workflows while reporting critical defects.
-                </p>
-            </div>
-
-            <div class="project-card">
-                <h3>Healthcare Portal</h3>
-
-                <p>
-                    Tested appointment booking, patient records,
-                    and secure login functionality.
-                </p>
+            <div class="glass stat-card">
+                <h2 class="counter" data-target="3">0</h2>
+                <p>Projects Tested</p>
             </div>
 
         </div>
+
     </section>
 
-    <section id="experience">
-        <h2 class="section-title">Experience</h2>
+    <section id="experience" class="hidden">
 
-        <div class="card">
+        <h2 class="section-title">Professional Experience</h2>
 
-            <h3>Manual QA Tester</h3>
+        <div class="glass timeline-card">
 
-            <p>ABC Technologies | 2023 - Present</p>
+            <h3>Senior QA Engineer / QA Lead</h3>
+
+            <h4>ABC Technologies</h4>
+
+            <p>Insurance Domain | 4 Years</p>
 
             <ul>
-                <li>Created and executed test cases.</li>
-                <li>Tracked defects using JIRA.</li>
-                <li>Conducted regression and smoke testing.</li>
-                <li>Collaborated with developers and stakeholders.</li>
+                <li>Led QA Team of 2-3 Members</li>
+                <li>Managed SIT and UAT Testing</li>
+                <li>Defect Tracking using Azure DevOps</li>
+                <li>Salesforce Testing</li>
+                <li>Playwright Automation</li>
+                <li>Agile Sprint Testing</li>
+                <li>Release Validation</li>
             </ul>
 
         </div>
+
     </section>
 
-    <section id="contact">
-        <h2 class="section-title">Contact</h2>
+    <section id="skills" class="hidden">
 
-        <div class="contact-box">
+        <h2 class="section-title">Technical Skills</h2>
 
-            <p>📧 roshanxxxxx@gmail.com</p>
+        <div class="glass">
 
-            <p>📞 +91 9XXXXXXXXX</p>
+            <div class="skill">
+                <p>Manual Testing</p>
+                <div class="progress">
+                    <span style="width:95%"></span>
+                </div>
+            </div>
 
-            <p>📍 Kolkata, India</p>
+            <div class="skill">
+                <p>Azure DevOps</p>
+                <div class="progress">
+                    <span style="width:90%"></span>
+                </div>
+            </div>
 
-            <a href="https://linkedin.com" class="btn">
-                LinkedIn Profile
-            </a>
+            <div class="skill">
+                <p>Salesforce</p>
+                <div class="progress">
+                    <span style="width:85%"></span>
+                </div>
+            </div>
+
+            <div class="skill">
+                <p>Playwright</p>
+                <div class="progress">
+                    <span style="width:80%"></span>
+                </div>
+            </div>
 
         </div>
+
+        <div class="tags">
+
+            <span class="tag">Functional Testing</span>
+            <span class="tag">Regression Testing</span>
+            <span class="tag">SIT Testing</span>
+            <span class="tag">UAT Testing</span>
+            <span class="tag">Bug Tracking</span>
+            <span class="tag">Agile</span>
+            <span class="tag">Azure DevOps</span>
+            <span class="tag">Salesforce</span>
+            <span class="tag">Playwright</span>
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+
+        </div>
+
     </section>
 
+    <section id="projects" class="hidden">
+
+        <h2 class="section-title">Featured Project</h2>
+
+        <div class="glass">
+
+            <h3>Insurance Underwriting Platform</h3>
+
+            <p>
+
+                Worked on enterprise underwriting systems
+                handling policy lifecycle and business rule validation.
+
+            </p>
+
+            <ul>
+
+                <li>Requirement Analysis</li>
+                <li>Functional Testing</li>
+                <li>SIT Testing</li>
+                <li>Regression Testing</li>
+                <li>Release Validation</li>
+                <li>Defect Management</li>
+
+            </ul>
+
+        </div>
+
+    </section>
+
+    <section id="contact" class="hidden">
+
+        <h2 class="section-title">Contact Me</h2>
+
+        <div class="glass contact">
+
+            <p>📧 roshan789022@gmail.com</p>
+            <p>📱 +91 7003748530</p>
+            <p>📍 Kolkata, India</p>
+            <p><a href="https://in.linkedin.com/in/roshan-choudhary-3a18b7211" target="_blank" class="normal-link">💼 LinkedIn Profile</a></p>
+
+        </div>
+
+    </section>
+
+<!-- BLOG 1 -->
+
+<div id="blog1" class="modal">
+
+    <div class="modal-content">
+
+        <span class="close-btn" onclick="closeBlog('blog1')">&times;</span>
+
+        <span class="blog-tag">Career Growth</span>
+
+        <h2>My Journey from QA Engineer to QA Test Lead</h2>
+
+        <p>
+            Over the past five years, my software testing journey has been one of
+            continuous learning, leadership, and quality excellence.
+        </p>
+
+        <p>
+            I started my career as a QA Engineer focusing on Manual Testing,
+            Functional Testing, Regression Testing and Defect Management.
+            Over time I gained expertise in requirement analysis, test planning,
+            release validation and stakeholder communication.
+        </p>
+
+        <p>
+            Leading a team of QA professionals helped me strengthen my leadership,
+            mentoring and risk management capabilities, ultimately transitioning
+            into the role of QA Test Lead.
+        </p>
+
+    </div>
+
+</div>
+
+<!-- BLOG 2 -->
+
+<div id="blog2" class="modal">
+
+    <div class="modal-content">
+
+        <span class="close-btn" onclick="closeBlog('blog2')">&times;</span>
+
+        <span class="blog-tag">Manual Testing</span>
+
+        <h2>Why Manual Testing Still Matters in the Age of Automation</h2>
+
+        <p>
+            Automation has revolutionized software quality assurance, but manual
+            testing continues to remain an essential component of software quality.
+        </p>
+
+        <p>
+            Human testers identify usability issues, design defects, workflow
+            inconsistencies and user experience problems that automation scripts
+            cannot easily detect.
+        </p>
+
+        <p>
+            Exploratory testing and business validation are areas where manual
+            testing provides tremendous value.
+        </p>
+
+    </div>
+
+</div>
+
+<!-- BLOG 3 -->
+
+<div id="blog3" class="modal">
+
+    <div class="modal-content">
+
+        <span class="close-btn" onclick="closeBlog('blog3')">&times;</span>
+
+        <span class="blog-tag">Best Practices</span>
+
+        <h2>Top 10 Lessons Learned from 5+ Years in Software Testing</h2>
+
+        <ol>
+            <li>Always understand requirements thoroughly.</li>
+            <li>Never assume system behavior.</li>
+            <li>Quality begins during requirement analysis.</li>
+            <li>Clear bug reports save everyone's time.</li>
+            <li>Collaboration beats confrontation.</li>
+            <li>Prioritize high-risk scenarios.</li>
+            <li>Automation is valuable but not everything.</li>
+            <li>Learn business processes deeply.</li>
+            <li>Continuous improvement is essential.</li>
+            <li>Quality is everyone's responsibility.</li>
+        </ol>
+
+    </div>
+
+</div>
+
+
+
     <footer>
-        <p>© 2026 Your Name | QA Tester</p>
+        © 2026 Roshan Choudhary | Portfolio
     </footer>
 
+    <script src="script.js"></script>
+
 </body>
+
 </html>

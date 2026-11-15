@@ -3,6 +3,8 @@
     --card: rgba(255, 255, 255, 0.05);
     --text: white;
     --nav: rgba(255, 255, 255, .05);
+    --card-bg: rgba(255,255,255,.05);
+
 }
 
 .light-theme {

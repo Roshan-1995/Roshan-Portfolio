@@ -249,7 +249,7 @@ height:250px;
     --modal-text:#222222;
 }
 
-body.dark-mode{
+body.light-mode{
     --modal-bg:#1f2937;
     --modal-text:#f3f4f6;
 }

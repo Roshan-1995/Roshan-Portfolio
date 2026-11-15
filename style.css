@@ -196,11 +196,9 @@ padding:20px;
 }
 
 .hidden{
-opacity:0;
-transform:translateY(50px);
-transition:1s;
+    opacity:1;
+    transform:none;
 }
-
 .show{
 opacity:1;
 transform:translateY(0);

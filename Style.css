@@ -421,7 +421,7 @@ body.light-mode{
 }
 
 .whatsapp-btn{
-    background:#25D366;
+    background:linear-gradient(90deg,#25D366);
 }
 
 .call-btn:hover,

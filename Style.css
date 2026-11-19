@@ -417,3 +417,51 @@ body.light-mode{
 .call-btn:active{
     transform:scale(.98);
 }
+/*CTA button*/
+
+.contact-buttons{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+    margin-top:25px;
+}
+
+.call-btn,
+.whatsapp-btn{
+    display:inline-block;
+    padding:12px 24px;
+    border-radius:30px;
+    text-decoration:none;
+    color:#fff;
+    font-weight:600;
+    transition:0.3s ease;
+}
+
+.call-btn{
+    background:linear-gradient(90deg,#2563eb,#7c3aed);
+}
+
+.whatsapp-btn{
+    background:#25D366;
+}
+
+.call-btn:hover,
+.whatsapp-btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 20px rgba(0,0,0,0.2);
+}
+
+@media (max-width:480px){
+
+    .contact-buttons{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .call-btn,
+    .whatsapp-btn{
+        width:220px;
+        text-align:center;
+    }
+}
